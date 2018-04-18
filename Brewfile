@@ -29,6 +29,7 @@ brew "brew-cask-completion"
 brew "ccat"
 brew "coreutils"
 brew "dnsmasq", restart_service: true
+brew "duti"
 brew "ffmpegthumbnailer"
 brew "libpng"
 brew "gdbm"
