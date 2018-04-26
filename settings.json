@@ -1,0 +1,83 @@
+{
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.historyExplorer.enabled": true,
+
+  // The path of the shell that the terminal uses on OS X.
+  "terminal.integrated.shell.osx": "/bin/zsh",
+
+  // Enables completion when you're writing Emmet abbreviations.
+  "html-css-class-completion.enableEmmetSupport": true,
+
+  "css.fileExtensions": ["css", "scss", "sass"],
+
+  // Workbench
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.statusBar.visible": true,
+  "workbench.activityBar.visible": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#333333",
+    "statusBar.noFolderBackground": "#333333",
+    "statusBar.debuggingBackground": "#263238"
+  },
+
+  "sublimeTextKeymap.promptV3Features": true,
+
+  // Enables the macOS touchbar buttons on the keyboard if available.
+  "keyboard.touchbar.enabled": true,
+
+  // Editor
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": false,
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.detectIndentation": true,
+  "editor.roundedSelection": false,
+  "editor.renderIndentGuides": true,
+  "editor.fontSize": 16,
+
+  // Explorer
+  "explorer.openEditors.visible": 0,
+  "explorer.confirmDelete": false,
+
+  // Trailing spaces
+  "trailing-spaces.trimOnSave": true,
+  "trailing-spaces.syntaxIgnore": ["markdown"],
+  // Project manager
+  "projectManager.openInNewWindow": false,
+  "projectManager.sortList": "Name",
+  "projectManager.git.baseFolders": ["$home/code/repos", "$home/Projects"],
+  // Window - prevent blurry text on secondary monitor
+  "window.zoomLevel": 0,
+
+  // Word-wrap markdown
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  },
+
+  // Files
+  "files.insertFinalNewline": true,
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/__pycache__": true,
+    "**/**/*.pyc": true
+  },
+
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  "editor.wordWrap": "on"
+}
