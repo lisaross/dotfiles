@@ -1,26 +1,9 @@
-Web Store : version 0_2
-Google Drive : version 14_1
-YouTube : version 4_2_8
-Pushbullet : version 341
 Xdebug helper : version 1_6_1
-Visual Inspector by CanvasFlip : version 1_0_23
 DevTools Author : version 0_6_6
-React Developer Tools : version 3_2_4
-Feedback : version 1_0
+React Performance Devtool : version 5_3
 Wappalyzer : version 5_5_2
-UberConference Screen Sharing : version 1_1_6
 LastPass: Free Password Manager : version 4_15_2_5
 Zoom Scheduler : version 1_4_28
-CryptoTokenExtension : version 0_9_73
-CrossBrowserTesting Local Connection : version 0_0_17
 Redux DevTools : version 2_15_3
-Cloud Print : version 0_1
-BrowserStack Local : version 16_4
-Chrome PDF Viewer : version 1
-Google Network Speech : version 1_0
 Video Speed Controller : version 0_5_2
-Chrome Web Store Payments : version 1_0_0_4
 Chrome Logger : version 4_1_2
-Screenshot, Annotate, & Screen Video Recorder : version 2_0_9
-Gmail : version 8_1
-Chrome Media Router : version 6718_423_0_0
