@@ -8,7 +8,6 @@ antigen use oh-my-zsh
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
-antigen bundle StackExchange/blackbox
 antigen bundle git-flow
 antigen bundle zsh-users/zsh-completions
 antigen bundle heroku
@@ -26,6 +25,7 @@ antigen bundle npm
 antigen bundle web-search
 antigen bundle last-working-dir
 antigen bundle z
+antigen bundle thefuck
 antigen bundle jimhester/per-directory-history
 antigen bundle alexrochas/zsh-extract
 antigen bundle alexrochas/zsh-git-semantic-commits
@@ -52,12 +52,10 @@ antigen apply
 source "${HOME}/.aliases"
 
 # set path
-export PATH="/usr/local/opt/go/libexec/bin:${HOME}/go/bin:/usr/local/bin:/usr/local/sbin:~/code/phpcs/bin:/usr/local/opt/openssl/bin:$PATH"
+export PATH="/usr/local/opt/go/libexec/bin:/Users/broad/go/bin:/usr/local/bin:/usr/local/sbin:~/code/phpcs/bin:/usr/local/opt/openssl/bin:$PATH"
 
 # other settings
 COMPLETION_WAITING_DOTS="true"
 
 # iterm integration
 [ -f $HOME/.iterm2_shell_integration.zsh ] && source ${HOME}/.iterm2_shell_integration.zsh
-
-eval $(thefuck --alias)
