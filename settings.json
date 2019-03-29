@@ -1,48 +1,101 @@
 {
   // The path of the shell that the terminal uses on OS X.
   "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+
   // Workbench
-  "workbench.colorTheme": "Cobalt2",
+  "workbench.colorTheme": "Night Owl",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.statusBar.visible": false,
+  "workbench.statusBar.visible": true,
   "workbench.activityBar.visible": true,
   "workbench.editor.closeEmptyGroups": false,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.enablePreview": true,
+  "workbench.sideBar.location": "left",
+  "workbench.startupEditor": "newUntitledFile",
+  // this lets you quick open multiple items in a row and now have the previous ones closed on you
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+
   // Explorer
   "explorer.openEditors.visible": 0,
   "explorer.confirmDelete": false,
+
   // Window - prevent blurry text on secondary monitor
   "window.zoomLevel": 0,
+  "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
+  "window.closeWhenEmpty": true,
+  "window.openFilesInNewWindow": "off",
+
   // Files
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.exclude": {
     "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
     "**/.DS_Store": true,
-    "**/__pycache__": true,
-    "**/**/*.pyc": true
+    "**/.next": true
   },
   // Terminal
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.lineHeight": 1.4,
+  "terminal.external.osxExec": "iTerm.app",
+
   // Editor
-  "editor.minimap.enabled": false,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.snippetSuggestions": "top",
-  "editor.formatOnPaste": true,
-  "editor.renderIndentGuides": true,
-  "editor.fontSize": 16,
+  "editor.fontFamily": "Dank Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.cursorStyle": "line",
   "editor.wordWrap": "on",
-  "editor.lineHeight": 23,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.fontWeight": "400",
+  "editor.cursorBlinking": "solid",
+  "editor.colorDecorators": false,
+  "editor.showFoldingControls": "always",
+  "editor.find.seedSearchStringFromSelection": true,
+  "editor.matchBrackets": true,
+  "editor.minimap.enabled": false,
+  // show snippets before any other auto completion
+  "editor.snippetSuggestions": "top",
+  "editor.fontSize": 18,
+  "editor.lineHeight": 28,
+  "editor.parameterHints.enabled": false,
+  "editor.scrollBeyondLastLine": true,
+  "editor.useTabStops": true,
+  "editor.formatOnPaste": true,
+  "editor.quickSuggestionsDelay": 30,
+  "editor.letterSpacing": 0.5,
+  "editor.tabSize": 2,
+  "editor.cursorWidth": 5,
+  "editor.renderWhitespace": "none",
+  "editor.rulers": [80, 100],
+  "editor.formatOnSave": true,
+  "editor.detectIndentation": false,
+  "editor.autoIndent": true,
+  // turn it off for JS
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+
   // php local executable
   "php.validate.executablePath": "/usr/local/bin/php",
-  // Trailing spaces
-  "trailing-spaces.trimOnSave": true,
+
   // gitlens
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
-  "terminal.integrated.fontFamily": "monospace",
-  "terminal.external.osxExec": "iTerm.app",
-  // "phpcs.executablePath": "/Users/broad/.composer/vendor/bin/phpcs",
-  "explorer.confirmDragAndDrop": false,
+
+  // html
+  "html.format.enable": true,
+  "html.format.preserveNewLines": true,
+
+  // emmet
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  // plugin specific
+  // tell the ESLint plugin to run on save
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  // Optional: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
+  "prettier.disableLanguages": ["js"]
 }
