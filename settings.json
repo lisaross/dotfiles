@@ -108,7 +108,7 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 
   // PLUGIN RELATED =================================
-  // List of installed extensions: https://github.com/lisaross/dotfiles/blob/master/vscode-installed.txt
+  // List of installed extensions: https://github.com/lisaross/dotfiles/blob/master/vscode-installed.md
 
   // PHP linting
   "phpcs.standard": "PSR2",
