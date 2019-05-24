@@ -1,9 +1,0 @@
-Xdebug helper : version 1_6_1
-DevTools Author : version 0_6_6
-React Performance Devtool : version 5_3
-Wappalyzer : version 5_5_2
-LastPass: Free Password Manager : version 4_15_2_5
-Zoom Scheduler : version 1_4_28
-Redux DevTools : version 2_15_3
-Video Speed Controller : version 0_5_2
-Chrome Logger : version 4_1_2
