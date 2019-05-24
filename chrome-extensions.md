@@ -1,0 +1,32 @@
+# Chrome Extensions
+
+- Add to Things 3
+- Dark Theme for Chrome
+- Dark Theme for Google™
+- DevDocs
+- DevTools Author
+- Disable Cookies
+- Download Manager
+- Github Dark theme One Dark with ligatures
+- HTTPS Everywhere
+- I don't care about cookies
+- LastPass: Free Password Manager
+- LiveReload
+- Miro Extension
+- React Developer Tools
+- Redux DevTools
+- Serpstat Plugin SEO & Website Analysis
+- Video Speed Controller
+- YouTube
+- Advanced REST client
+- Allow-Control-Allow-Origin: *
+- Bitbucket code review
+- Bitbucket Diff Tree
+- BrowserStack Local
+- Droplr - Screenshot, Annotate, & Screencast
+- GitHub Hovercard
+- Service Worker Detector
+- Tag Assistant (by Google)
+- The Great Suspender
+- Wappalyzer
+- Xdebug helper
