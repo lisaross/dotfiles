@@ -1,26 +1,63 @@
 {
-  // The path of the shell that the terminal uses on OS X.
-  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
-
-  // Workbench
-  "workbench.colorTheme": "Night Owl",
+  // Themeing and look (iconTheme and colorTheme are extensions)
   "workbench.iconTheme": "material-icon-theme",
+  // https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
+  "workbench.colorTheme": "Night Owl",
+  // https://marketplace.visualstudio.com/items?itemName=sdras.night-owl
+
   "workbench.statusBar.visible": true,
   "workbench.activityBar.visible": true,
-  "workbench.editor.closeEmptyGroups": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.editor.enablePreview": true,
-  "workbench.sideBar.location": "left",
-  "workbench.startupEditor": "newUntitledFile",
-  // this lets you quick open multiple items in a row and now have the previous ones closed on you
-  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#1A1A1A",
+    "statusBar.noFolderBackground": "#212121",
+    "statusBar.debuggingBackground": "#263238"
+  },
+  // open settings as json file not wysiwyg
+  "workbench.settings.editor": "json",
+
+  // Editor
+  "editor.fontFamily": "Dank Mono, Menlo, Monaco, 'Courier New', monospace",
+  // https://dank.sh/ font (paid) or similar free https://github.com/tonsky/FiraCode
+  "editor.fontLigatures": true, // font ligatures are the BOMB
+  "editor.cursorStyle": "line",
+  "editor.wordWrap": "on",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.fontWeight": "400",
+  "editor.cursorBlinking": "solid",
+  "editor.colorDecorators": true,
+  "editor.showFoldingControls": "always",
+  "editor.find.seedSearchStringFromSelection": true,
+  "editor.matchBrackets": true,
+  "editor.minimap.enabled": false,
+  // show snippets before any other auto completion
+  "editor.snippetSuggestions": "top",
+  "editor.fontSize": 18,
+  "editor.lineHeight": 29,
+  "editor.parameterHints.enabled": true,
+  "editor.scrollBeyondLastLine": true,
+  "editor.useTabStops": true,
+  "editor.formatOnPaste": false,
+  "editor.quickSuggestionsDelay": 30,
+  "editor.letterSpacing": 0.5,
+  "editor.tabSize": 2,
+  "editor.cursorWidth": 5,
+  "editor.renderWhitespace": "none",
+  "editor.rulers": [80, 100],
+  "editor.detectIndentation": true,
+  "editor.autoIndent": true,
+  "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
 
   // Explorer
   "explorer.openEditors.visible": 0,
   "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
 
   // Window - prevent blurry text on secondary monitor
   "window.zoomLevel": 0,
+
   "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
   "window.closeWhenEmpty": true,
   "window.openFilesInNewWindow": "off",
@@ -28,6 +65,7 @@
   // Files
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -36,66 +74,107 @@
     "**/.DS_Store": true,
     "**/.next": true
   },
-  // Terminal
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.lineHeight": 1.4,
-  "terminal.external.osxExec": "iTerm.app",
 
-  // Editor
-  "editor.fontFamily": "Dank Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.cursorStyle": "line",
-  "editor.wordWrap": "on",
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.fontWeight": "400",
-  "editor.cursorBlinking": "solid",
-  "editor.colorDecorators": false,
-  "editor.showFoldingControls": "always",
-  "editor.find.seedSearchStringFromSelection": true,
-  "editor.matchBrackets": true,
-  "editor.minimap.enabled": false,
-  // show snippets before any other auto completion
-  "editor.snippetSuggestions": "top",
-  "editor.fontSize": 18,
-  "editor.lineHeight": 28,
-  "editor.parameterHints.enabled": false,
-  "editor.scrollBeyondLastLine": true,
-  "editor.useTabStops": true,
-  "editor.formatOnPaste": true,
-  "editor.quickSuggestionsDelay": 30,
-  "editor.letterSpacing": 0.5,
-  "editor.tabSize": 2,
-  "editor.cursorWidth": 5,
-  "editor.renderWhitespace": "none",
-  "editor.rulers": [80, 100],
-  "editor.formatOnSave": true,
-  "editor.detectIndentation": false,
-  "editor.autoIndent": true,
-  // turn it off for JS
-  "[javascript]": {
-    "editor.formatOnSave": false
+  // Terminal
+  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  // https://ohmyz.sh/
+  // my zsh config: https://github.com/lisaross/dotfiles/blob/master/.zshrc
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.fontFamily": "Dank Mono, Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.lineHeight": 1.4,
+  "terminal.integrated.fontWeightBold": "bold",
+
+  "extensions.ignoreRecommendations": true,
+
+  "breadcrumbs.enabled": true,
+
+  "html.format.enable": true,
+  "html.format.preserveNewLines": true,
+
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
   },
 
-  // php local executable
+  // use plugins to validate
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "php.validate.enable": false,
   "php.validate.executablePath": "/usr/local/bin/php",
+
+  "git.autofetch": true,
+
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+  // PLUGIN RELATED =================================
+  // List of installed extensions: https://github.com/lisaross/dotfiles/blob/master/vscode-installed.txt
+
+  // PHP linting
+  "phpcs.standard": "PSR2",
+  "phpcbf.onsave": true,
+  "phpcbf.standard": "PSR2",
 
   // gitlens
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
 
-  // html
-  "html.format.enable": true,
-  "html.format.preserveNewLines": true,
-
-  // emmet
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-
-  // plugin specific
   // tell the ESLint plugin to run on save
   "eslint.autoFixOnSave": true,
   "eslint.alwaysShowStatus": true,
-  // Optional: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
-  "prettier.disableLanguages": ["js"]
+
+  // personal gist saves settings to cloud
+  "sync.gist": "f3a2a1ee4f60b8bbde201cff19feb9c8",
+
+  "yaml.schemas": {
+    "file:///Users/dev/.vscode-insiders/extensions/atlassian.atlascode-1.4.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+
+  // Live Share Settings
+  "liveshare.featureSet": "insiders", // new features released early
+  "liveshare.audio.startCallOnShare": true,
+
+  // Atlassian Settings
+  "atlascode.jira.workingSite": {
+    "baseUrlSuffix": "atlassian.net"
+  },
+  "atlascode.jira.statusbar.showProject": true,
+  "atlascode.jira.todoIssues.triggers": ["TODO:", "BUG:", "FIXME:", "ISSUE:"],
+  "atlascode.jira.workingProject": {
+    "id": "10000",
+    "name": "Pocket Career Coach Web",
+    "key": "PCC"
+  },
+  "atlascode.jira.customJql": [
+    {
+      "jql": [
+        {
+          "enabled": true,
+          "id": "78549ed0-d184-4109-a702-6991efb6a43d",
+          "name": "Current Release Only",
+          "query": "project = PCC AND fixVersion = earliestUnreleasedVersion() AND sprint in openSprints() and assignee = currentUser() and status in (\"In Progress\", QA, \"To Do\") ORDER BY rank ASC"
+        },
+        {
+          "enabled": true,
+          "id": "",
+          "name": "Current Sprint Only",
+          "query": "project = PCC AND sprint in openSprints() and assignee = currentUser() and status in (\"To Do\", Open, \"In Progress\")  ORDER BY fixVersion ASC"
+        }
+      ],
+      "siteId": "df58a239-9b72-490c-bfbc-761e784c43a8"
+    }
+  ],
+  "atlascode.bitbucket.pipelines.explorerEnabled": false,
+  "atlascode.bitbucket.issues.explorerEnabled": false,
+  "atlascode.jira.statusbar.showUser": false,
+  "atlascode.bitbucket.statusbar.showUser": false,
+  "atlascode.jira.explorer.showAssignedIssues": false,
+  "atlascode.jira.explorer.showOpenIssues": false,
+
+  // NPM intellisense settings
+  "npm-intellisense.importES6": false,
+  "npm-intellisense.importQuotes": "'",
+  "npm-intellisense.importLinebreak": ";\r\n",
+  "npm-intellisense.importDeclarationType": "const"
 }
