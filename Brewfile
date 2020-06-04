@@ -22,13 +22,13 @@ brew "apr-util"
 brew "argon2"
 brew "icu4c"
 brew "docbook"
-brew "asciidoc"
-brew "aspell"
-brew "autoconf"
 brew "gdbm"
 brew "readline"
 brew "sqlite"
 brew "xz"
+brew "asciidoc"
+brew "aspell"
+brew "autoconf"
 brew "aws-elasticbeanstalk"
 brew "gettext"
 brew "gmp"
@@ -131,9 +131,12 @@ cask "abstract"
 cask "adobe-air"
 cask "adobe-creative-cloud"
 cask "adobe-digital-editions"
+cask "airparrot"
 cask "alfred"
 cask "appcleaner"
 cask "audio-hijack"
+cask "bluestacks"
+cask "brave-browser"
 cask "cardhop"
 cask "charles"
 cask "cheatsheet"
@@ -153,6 +156,7 @@ cask "font-microsoft-office"
 cask "gas-mask"
 cask "go2shell"
 cask "google-chrome"
+cask "google-drive-file-stream"
 cask "graphiql"
 cask "handbrake"
 cask "hazel"
@@ -177,6 +181,8 @@ cask "numi"
 cask "parallels"
 cask "phew"
 cask "plex-media-server"
+cask "pokerstars"
+cask "post-haste"
 cask "postman"
 cask "provisionql"
 cask "qlcolorcode"
@@ -193,6 +199,7 @@ cask "quicklookapk"
 cask "quicklookase"
 cask "radarr"
 cask "receiptquicklook"
+cask "reflector"
 cask "rocket"
 cask "sejda-pdf"
 cask "sequel-pro"
@@ -203,16 +210,20 @@ cask "soundsource"
 cask "spamsieve"
 cask "spotify"
 cask "station"
+cask "steam"
 cask "sublime-text"
 cask "suspicious-package"
 cask "teamviewer"
 cask "telegram"
 cask "the-unarchiver"
+cask "thingsmacsandboxhelper"
 cask "timing"
 cask "transmission"
+cask "transmit"
 cask "typora"
 cask "unetbootin"
 cask "vagrant"
+cask "vanilla"
 cask "virtualbox"
 cask "visual-studio-code-insiders"
 cask "vlc"
@@ -220,3 +231,29 @@ cask "vmware-fusion"
 cask "waves-central"
 cask "webpquicklook"
 cask "yo"
+mas "Better Rename 9", id: 414209656
+mas "com.apptorium.Workspaces", id: 1219826448
+mas "Core Tunnel", id: 1354318707
+mas "Delay-Start", id: 591620786
+mas "Dropzone 3", id: 695406827
+mas "Fantastical", id: 975937182
+mas "Flow", id: 1423210932
+mas "Growl", id: 467939042
+mas "Jira", id: 1475897096
+mas "Just Press Record", id: 979561272
+mas "Keynote", id: 409183694
+mas "Kindle", id: 405399194
+mas "LG Screen Manager", id: 1142051783
+mas "Magnet", id: 441258766
+mas "PCalc", id: 403504866
+mas "Reeder", id: 880001334
+mas "Sip", id: 507257563
+mas "SiteSucker", id: 442168834
+mas "Spark", id: 1176895641
+mas "StuffIt Expander", id: 919269455
+mas "Things", id: 904280696
+mas "ToothFairy", id: 1191449274
+mas "Tweetbot", id: 1384080005
+mas "Typeface", id: 1062679359
+mas "Webcam Settings", id: 533696630
+mas "Xcode", id: 497799835
